@@ -6,7 +6,11 @@
 
 - X-server auto start: //TODO
 
-- CLion (ssh port: 2222): `cd && sudo apt-get install cmake gcc clang gdb build-essential && wget https://raw.githubusercontent.com/JetBrains/clion-wsl/master/ubuntu_setup_env.sh && bash ubuntu_setup_env.sh && rm ubuntu_setup_env.sh`
+- CLion Download: https://www.jetbrains.com/clion/download/download-thanks.html?platform=linux
+
+- CLion Installation (Requirement: `cd %USERPROFILE%\Downloads && wsl.exe sudo rm -r /opt/clion-* && wsl.exe sudo tar xvzf CLion-*.tar.gz -C /opt/ && wsl.exe /bin/bash -c "echo export DISPLAY=localhost:0.0 >> ~/.profile" && wsl.exe /bin/bash -c "echo \"alias clion=\\\"sh /opt/clion-*/bin/clion.sh\\\"\" >> ~/.profile"`)
+
+- CLion Setup (ssh port: 2222): `cd && sudo apt-get install cmake gcc clang gdb build-essential && wget https://raw.githubusercontent.com/JetBrains/clion-wsl/master/ubuntu_setup_env.sh && bash ubuntu_setup_env.sh && rm ubuntu_setup_env.sh`
 Source: https://www.jetbrains.com/help/clion/how-to-use-wsl-development-environment-in-clion.html
 
 - X11-Forwarding: `export DISPLAY=localhost:0.0" >> ~/.bashrc`

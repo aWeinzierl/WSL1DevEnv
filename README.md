@@ -6,6 +6,10 @@
 
 - X-server auto start: //TODO
 
+- PyCharm Download: ttps://www.jetbrains.com/pycharm/download/download-thanks.html?platform=linux
+
+- PyCharm X11 deps: `sudo apt-get install libxtst6 libxi6`
+
 - CLion Download: https://www.jetbrains.com/clion/download/download-thanks.html?platform=linux
 
 - CLion Installation (Requirement: CLion in Download folder): `cd %USERPROFILE%\Downloads && wsl.exe sudo rm -r /opt/clion-* ; wsl.exe sudo tar xvzf CLion-*.tar.gz -C /opt/ && wsl.exe /bin/bash -c "echo export DISPLAY=localhost:0.0 >> ~/.profile" && wsl.exe /bin/bash -c "echo \"alias clion=\\\"sh /opt/clion-*/bin/clion.sh\\\"\" >> ~/.profile"`)
